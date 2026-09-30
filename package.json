@@ -11,21 +11,21 @@
     "ordering",
     "node"
   ],
-  "homepage": "https://github.com/matthewrpereira/restaurant-ordering-system-sjp-b#readme",
+  "homepage": "https://github.com/Lussek/Back-End-Engenharia-de-Software---SJP#readme",
   "bugs": {
-    "url": "https://github.com/matthewrpereira/restaurant-ordering-system-sjp-b/issues"
+    "url": "https://github.com/Lussek/Back-End-Engenharia-de-Software---SJP/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/matthewrpereira/restaurant-ordering-system-sjp-b.git"
+    "url": "git+https://github.com/Lussek/Back-End-Engenharia-de-Software---SJP.git"
   },
   "license": "ISC",
-  "author": "Mateus R. Pereira",
+  "author": "Lussek",
   "type": "module",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "node --watch --env-file=.env --import=tsx/esm src/server.ts",
+    "dev": "tsx watch src/server.ts",
     "build": "tsc",
     "start": "node dist/server.js"
   },
@@ -36,7 +36,6 @@
     "typescript": "^7.0.2"
   },
   "dependencies": {
-    "@supabase/supabase-js": "^2.112.4",
     "express": "^5.2.1"
   }
 }
