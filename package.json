@@ -1,4 +1,4 @@
-git fetch origin{
+{
   "name": "restaurant_ordering_system",
   "version": "1.0.0",
   "description": "Projeto da disciplina de Desenvolvimento Back-End, do curso de Engenharia de Software - 4P - Turma B (sex)",
