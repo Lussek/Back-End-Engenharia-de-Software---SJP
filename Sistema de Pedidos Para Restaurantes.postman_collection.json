@@ -1,0 +1,320 @@
+{
+  "info": {
+    "_postman_id": "66e8ce51-e24b-4697-b4bb-3194666122b6",
+    "name": "Sistema de Pedidos Para Restaurantes",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "57629757"
+  },
+  "item": [
+    {
+      "name": "Categories",
+      "item": [
+        {
+          "name": "Get - List Categories",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/categories",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "categories"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Post - Categories",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n\r\n    \"name\":\"Pizza teste\",\r\n    \"description\":\"Teste Categoria-Nova\",\r\n    \"icon\":\"kkK\",\r\n    \"display_order\": 1,\r\n    \"active\" : true\r\n\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/categories",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "categories"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "GET - LIST ID CATEGORY",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/categories/bebida",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "categories",
+                "bebida"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Update Category",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n\r\n    \"name\":\"Pizza teste12\",\r\n    \"description\":\"Teste Categoria-Nova\",\r\n    \"icon\":\"kkK\",\r\n    \"display_order\": 1,\r\n    \"active\" : true\r\n\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/categories/9f363808-2cba-46a0-8ce4-be953baa7f5c",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "categories",
+                "9f363808-2cba-46a0-8ce4-be953baa7f5c"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "DELET CATEGORY",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/categories/9f363808-2cba-46a0-8ce4-be953baa7f5c",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "categories",
+                "9f363808-2cba-46a0-8ce4-be953baa7f5c"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "GET - Search",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"category_id\": \"8d7628a6-2dd3-4059-b644-b68e7f7ec2a6\",\r\n  \"title\": \"Coca-Cola 2L\",\r\n  \"description\": \"Refrigerante gelado 2 litros\",\r\n  \"price\": 12.50,\r\n  \"available\": true,\r\n  \"active\": true\r\n}",
+              "options": {
+                "raw": {
+                  "language": "text"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/categories/search/Pizzas Doce",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "categories",
+                "search",
+                "Pizzas Doce"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Products",
+      "item": [
+        {
+          "name": "Get - List Products",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/products",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "products"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Post - Products",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"category_id\": \"8d7628a6-2dd3-4059-b644-b68e7f7ec2a6\",\r\n  \"title\": \"Coca-Cola 2L\",\r\n  \"description\": \"Refrigerante gelado 2 litros\",\r\n  \"price\": 12.50,\r\n  \"available\": true,\r\n  \"active\": true\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/products",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "products"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get ID product",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "ttp://localhost:3000/products/3f33212c-b5d6-43c1-bc13-e0f3635b52a5",
+              "protocol": "ttp",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "products",
+                "3f33212c-b5d6-43c1-bc13-e0f3635b52a5"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "UPDATE PRODUCT",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"title\": \"Coca-Cola Zero 2L\",\r\n  \"price\": 13.00\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/products/3f33212c-b5d6-43c1-bc13-e0f3635b52a5",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "products",
+                "3f33212c-b5d6-43c1-bc13-e0f3635b52a5"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "DELET PRODUCT",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/products/3f33212c-b5d6-43c1-bc13-e0f3635b52a5",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "products",
+                "3f33212c-b5d6-43c1-bc13-e0f3635b52a5"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "index",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000"
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "New supabase",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            ""
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
